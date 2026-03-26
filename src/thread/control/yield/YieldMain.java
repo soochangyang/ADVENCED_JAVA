@@ -18,8 +18,7 @@ public class YieldMain {
             for (int i = 0 ; i < 10;  i++){
                 System.out.println(Thread.currentThread().getName() + " - " +i);
                 //1.empty
-                //2.sleep(1)
-                //sleep(1);
+                //sleep(1) // 2. sleep(1);
                 Thread.yield(); //3. yield
             }
         }
