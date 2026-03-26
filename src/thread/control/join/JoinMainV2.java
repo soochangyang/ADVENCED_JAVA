@@ -1,11 +1,11 @@
-package thread.start.control.join;
+package thread.control.join;
 
 import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
 
-public class JoinMainV3 {
+public class JoinMainV2 {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         log("Start");
 
         SumTask task1 = new SumTask(1, 50);
@@ -16,16 +16,8 @@ public class JoinMainV3 {
 
         thread1.start();
         thread2.start();
-
-        //Wait until Thread finish
-        log(" join() - main thread wait until thread1, thread2 finish ");
-
-        /**
-         * DESCRIPTION:
-         * The Thread.join() method causes the calling thread to wait until the Runnable's run method terminates.
-        * */
-        thread1.join();
-        thread2.join();
+        log("main thread sleep() ");
+        sleep(3000);
 
         log("task1.result = "+task1.result);
         log("task2.result = "+task2.result);
@@ -49,7 +41,7 @@ public class JoinMainV3 {
         @Override
         public void run() {
             log("Job Start ");
-            //sleep(2000);
+            sleep(2000);
             int sum = 0;
             for (int i = startValue; i <= endValue; i++) {
                 sum += i;

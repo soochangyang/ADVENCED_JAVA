@@ -1,7 +1,6 @@
-package thread.start.control;
+package thread.control;
 
 import thread.start.HelloRunnable;
-import thread.start.HelloThread;
 
 import static util.MyLogger.log;
 

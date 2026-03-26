@@ -1,4 +1,4 @@
-package thread.start.control.interrupt;
+package thread.control.interrupt;
 
 import static util.MyLogger.log;
 import static util.ThreadUtils.sleep;
