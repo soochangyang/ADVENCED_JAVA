@@ -8,13 +8,15 @@
 - - -
 
 ## java.util.concurrent 등장.(since java 1.5)
-## LockSupport 
+## LockSupport 😁😎🥷
 * LockSupport는 스레드를 WAITING 상태로 변경한다. 
 * WAITING 상태는 누가 깨워주기 전까지 계속 대기하며, CPU 실행 스케쥴에 들어가지 않는다. 
 
 ## LockSupport 주요기능
-* park() 스레드를 WAITING상태로 변경
+* **park()** 스레드를 ***WAITING***상태로 변경
   * 스레드를 대기상태로 둔다
 * parkNanos(nanos): 스레드를 나노초동안 TIME_WAITING상태로 변경
   * 지정한 나노초가 지나면 TIME_WAITING 상태에서 빠져 나오고 RUNNABLE 상태로 변경됨
-* unpark(thread): WAITING 상태의 대장 스레드를 RUNNABLE상태로 변경한다. 
+* unpark(thread): WAITING 상태의 대장 스레드를 RUNNABLE상태로 변경한다.
+
+
