@@ -21,6 +21,7 @@ public class ThreadStopMainV4 {
 
         @Override
         public void run(){
+            log("Thread Name = " + Thread.currentThread().getName() +" in run");
             // Thread.interrupted()는 생태를 체크후 true를 반환한 후 false로 변경한다.
             while (!Thread.interrupted()){
                 log("작업중");
