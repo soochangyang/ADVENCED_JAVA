@@ -13,7 +13,7 @@ public class BoundedQueueV4 implements BoundedQueue {
     private final Lock lock = new ReentrantLock();
     private final Condition condition = lock.newCondition();
 
-    private final Queue<String> queue = new ArrayDeque<String>();
+    private final Queue<String> queue = new ArrayDeque<>();
 
     private final int max;
 

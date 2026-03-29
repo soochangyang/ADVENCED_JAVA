@@ -16,7 +16,7 @@ public class BoundedQueueV5 implements BoundedQueue {
     private final Condition producerCondition = lock.newCondition();
     private final Condition consumerCondition = lock.newCondition();
 
-    private final Queue<String> queue = new ArrayDeque<String>();
+    private final Queue<String> queue = new ArrayDeque<>();
 
     private final int max;
 

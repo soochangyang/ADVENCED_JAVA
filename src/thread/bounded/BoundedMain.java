@@ -71,14 +71,12 @@ public class BoundedMain {
         log("==[소비자 먼저 실행] 시작, " + queue.getClass().getSimpleName() + "== ");
     }
 
-
-
-    static class Task implements Runnable{
+/*    static class Task implements Runnable{
         @Override
         public void run() {
 
         }
-    }
+    }*/
 }
 
 
