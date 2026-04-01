@@ -1,4 +1,4 @@
-package thread.cas.increment;
+package thread.cas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import static util.ThreadUtils.sleep;
 
 public class CasMainV3 {
 
-    private static final int THREAD_COUNT = 2;
+    private static final int THREAD_COUNT = 100;
 
     public static void main(String[] args) throws InterruptedException {
         AtomicInteger atomicInteger = new AtomicInteger(0);
