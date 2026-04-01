@@ -13,6 +13,7 @@ public class IncrementThreadMain {
         test(new BasicInteger());
         test(new VolatileInteger());
         test(new SynchInteger());
+        test(new MyAtomicInteger());
 
     }
 
