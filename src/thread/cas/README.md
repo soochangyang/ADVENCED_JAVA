@@ -1,4 +1,4 @@
-# CAS : Campare-And-Swap
+# CAS : Compare-And-Swap
 
 ## CAS 와 LOCK 비교 
 
