@@ -8,8 +8,11 @@ public class SimpleListMainV2 {
 
     static void main(String[] args) throws InterruptedException {
         //test(new BasicList());
-        test(new SynchList());
-        //test();
+        //log();
+        //test(new SynchList());
+        //log();
+        //test(new SyncProxyList(new BasicList()));
+        test(new SyncProxyList(new SynchList()));
     }
 
     private static void test(SimpleList list) throws InterruptedException {
